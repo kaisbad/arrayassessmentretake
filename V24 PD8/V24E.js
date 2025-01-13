@@ -23010,5 +23010,19 @@ let data = [
   },
 ];
 //1 print each card where the series set is "Diamond & Pearl"
+function filterCard() {
+  data
+    .filter((card) => card.set.series === "Diamond & Pearl")
+    .forEach((card) => console.log(card));
+}
 
+filterCard();
 //2 print each card name where the card type "includes" Water
+
+function includeCard() {
+  data
+    .filter((card) => card.types.includes("Water"))
+    .forEach((card) => console.log(card.name));
+}
+
+includeCard();
